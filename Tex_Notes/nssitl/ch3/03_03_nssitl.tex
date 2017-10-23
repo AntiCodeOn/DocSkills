@@ -1,0 +1,47 @@
+\documentclass{article}
+\newcommand{\ud}{\,\mathrm{d}}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\theoremstyle{definition} \newtheorem{law}{Law}
+\theoremstyle{plain}      \newtheorem{jury}[law]{Jury}
+\theoremstyle{remark}     \newtheorem*{marg}{Margaret}
+\begin{document}
+\begin{equation*}
+ \mathbf{X} = \left(
+   \begin{array}{ccc}
+     x_1 & x_2 & \ldots \\
+     x_3 & x_4 & \ldots \\
+     \vdots & \vdots & \ddots
+   \end{array} \right)
+\end{equation*}
+\begin{equation*}
+  |x| = \left\{
+    \begin{array}{rl}
+     -x & \text{if } x < 0, \\
+     0 &  \text{if } x = 0, \\
+     x &  \text{if } x > 0.
+    \end{array} \right.
+\end{equation*}
+\begin{equation*}
+ \int_a^b f(x)\ud x
+\end{equation*}
+\begin{equation*}
+{}^{14}_{6}\text{C}
+\qquad \text{versus} \qquad
+{}^{14}_{\phantom{1}6}\text{C}
+\end{equation*}
+$\mu, M \qquad \boldsymbol{\mu}, \boldsymbol{M}$
+\begin{law} \label{law:box}
+Don't hide in the witness box
+\end{law}
+\begin{jury}[The Twelve]
+It could be you! So beware and see law~\ref{law:box}.
+\end{jury}
+\begin{jury}
+You will disregard the last statetment. 
+\end{jury}
+\begin{marg}No, No, No\end{marg}
+\begin{marg}Denis!\end{marg}
+\end{document}
