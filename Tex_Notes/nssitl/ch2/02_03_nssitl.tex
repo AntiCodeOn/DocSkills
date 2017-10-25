@@ -1,0 +1,83 @@
+\documentclass{article}
+%Titles, Chapters and Sections
+\begin{document}
+\flushleft
+\begin{enumerate}
+\item You can nest the list environments to your taste:
+\begin{itemize}
+\item But it might start to look silly.
+\item[-] With a dash.
+\end{itemize}
+\item Therefore remember:
+\begin{description}
+\item[Stupid] things will not become smart because they are in a list.
+\item[Smart] thins, though, can be presented beautifully in a list.
+\end{description}
+\end{enumerate}
+\newpage
+\begin{flushleft}
+This text is\\ left aligned. \LaTeX{} is not trying to make each line the same length.
+\end{flushleft}
+\begin{flushright}
+This text is right-\\aligned. \LaTeX{} is not trying to make each line the same length.
+\end{flushright}
+\begin{center}
+At the centre\\ of the earth
+\end{center}
+\newpage
+\begin{tabular}{|r|l|}
+\hline
+7C0 & hexadecimal \\
+3700 & octal \\ \cline{2-2}
+111110000000 & binary \\
+\hline \hline
+1984 & decimal \\
+\hline
+\end{tabular}
+\newline
+\newline
+\newline
+\begin{tabular}{|p{4.7cm}|}
+\hline
+Welcome to Boxy's paragraph.
+We sincerely hope you'll all enjoy the show.\\
+\hline
+\end{tabular}
+\newline
+\newline
+\newline
+\begin{tabular}{@{} l @{}}
+\hline
+no leading space\\
+\hline
+\end{tabular}
+\newline
+\newline
+\newline
+\begin{tabular}{c r @{.} l}
+Pi expression & \multicolumn{2}{c}{Value} \\
+\hline
+$\pi$ & 3&1416 \\
+$\pi^{\pi}$ & 36&46 \\
+$(\pi^{\pi})^{\pi}$ & 80662&7 \\
+\end{tabular}
+\newline
+\newline
+\newline
+\begin{tabular}{|c|c|}
+\hline
+\multicolumn{2}{|c|}{Ene} \\
+\hline
+Mene & Muh! \\
+\hline
+\end{tabular}
+\newline
+\newline
+\newline
+\clearpage
+Figure~\ref{white} is an example of Pop-Art.
+\begin{figure}[!hbtp]
+\makebox[\textwidth]{\framebox[5cm]{\rule{Opt}{5cm}}}
+\caption{Five by Five in centimeters.\label{white}}
+\end{figure}
+\end{document}
